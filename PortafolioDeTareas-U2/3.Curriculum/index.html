@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mi Portafolio</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Header con Navegación -->
+  <header class="main-header">
+    <nav class="navbar">
+      <div class="logo">
+        <!-- Imagen de logo -->
+        <img src="../3.Curriculum/img/logo.png" alt="Logo" />
+      </div>
+      <ul class="nav-links">
+        <li><a href="#hero">Inicio</a></li>
+        <li><a href="#about">Sobre Mí</a></li>
+        <li><a href="#skills">Habilidades</a></li>
+        <li><a href="#experience">Experiencia</a></li>
+        <li><a href="#education">Educación</a></li>
+        <li><a href="#contact">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Sección Hero -->
+  <section id="hero" class="hero-section">
+    <div class="hero-content">
+      <h1>Diseñador &amp; Desarrollador Web</h1>
+      <p>
+        ¡Hola! Soy <strong>Tu Nombre</strong>, ayudo a convertir ideas en productos digitales atractivos.
+      </p>
+      <a href="#contact" class="btn-primary">Contáctame</a>
+    </div>
+    <div class="hero-image">
+      <img src="../3.Curriculum/img/perfil.jpg" alt="Ilustración de Hero" />
+    </div>
+  </section>
+
+  <!-- Sección Sobre Mí -->
+  <section id="about" class="section about-section">
+    <h2>Sobre Mí</h2>
+    <p>
+      Aquí puedes incluir una breve descripción sobre tu trayectoria, motivaciones y filosofía de trabajo.
+    </p>
+  </section>
+
+  <!-- Sección Habilidades -->
+  <section id="skills" class="section skills-section">
+    <h2>Habilidades</h2>
+    <div class="skills-grid">
+      <div class="skill-box">
+        <h3>HTML / CSS</h3>
+        <p>Experiencia creando interfaces web modernas y responsivas.</p>
+      </div>
+      <div class="skill-box">
+        <h3>JavaScript</h3>
+        <p>Conocimiento avanzado en frameworks y librerías populares.</p>
+      </div>
+      <div class="skill-box">
+        <h3>Backend</h3>
+        <p>Desarrollo de APIs con Node.js y uso de bases de datos SQL/NoSQL.</p>
+      </div>
+      <div class="skill-box">
+        <h3>Diseño UI/UX</h3>
+        <p>Enfoque en la experiencia de usuario y el diseño intuitivo.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección Experiencia y Educación -->
+  <section class="section two-columns">
+    <div id="experience" class="column">
+      <h2>Experiencia</h2>
+      <div class="item-box">
+        <h3>Desarrollador Web en Empresa ABC</h3>
+        <span>2020 - Presente</span>
+        <p>Responsable del desarrollo y mantenimiento de aplicaciones web.</p>
+      </div>
+      <div class="item-box">
+        <h3>Analista de Sistemas en Empresa XYZ</h3>
+        <span>2018 - 2020</span>
+        <p>Implementación de soluciones tecnológicas y soporte al usuario.</p>
+      </div>
+    </div>
+    <div id="education" class="column">
+      <h2>Educación</h2>
+      <div class="item-box">
+        <h3>Universidad Ejemplo</h3>
+        <span>2014 - 2018</span>
+        <p>Licenciatura/Ingeniería en Sistemas, graduado con honores.</p>
+      </div>
+      <div class="item-box">
+        <h3>Certificaciones Adicionales</h3>
+        <p>Certificado en XYZ, Especialización en ABC, etc.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección de Contacto -->
+  <section id="contact" class="section contact-section">
+    <h2>Contacto</h2>
+    <p>
+      ¿Tienes un proyecto en mente o quieres colaborar? ¡Envíame un mensaje y te responderé a la brevedad!
+    </p>
+    <form class="contact-form">
+      <label for="name">Nombre:</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="message">Mensaje:</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+
+      <button type="submit" class="btn-primary">Enviar</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="main-footer">
+    <p>
+      © 2025 - Tu Nombre. Todos los derechos reservados.
+      <br />
+      <a href="#">LinkedIn</a> | <a href="#">GitHub</a> | <a href="#">Twitter</a>
+    </p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página con Tabla Avanzada</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Mi Página con Tabla</h1>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Servicios</a></li>
+            <li><a href="#">Tabla</a></li>
+            <li><a href="#">Contacto</a></li>
+        </ul>
+    </nav>
+    
+    <main>
+        <h2>Horario de Clases</h2>
+        <table>
+            <tr>
+                <th>Hora</th>
+                <th>Lunes</th>
+                <th>Martes</th>
+                <th>Miércoles</th>
+                <th>Jueves</th>
+                <th>Viernes</th>
+            </tr>
+            <tr>
+                <td>8:00 - 9:00</td>
+                <td rowspan="2">Matemáticas</td>
+                <td>Historia</td>
+                <td rowspan="2">Física</td>
+                <td>Química</td>
+                <td>Arte</td>
+            </tr>
+            <tr>
+                <td>9:00 - 10:00</td>
+                <td>Lengua</td>
+                <td>Deportes</td>
+                <td>Música</td>
+            </tr>
+            <tr>
+                <td>10:00 - 11:00</td>
+                <td>Computación</td>
+                <td rowspan="2">Inglés</td>
+                <td>Educación Cívica</td>
+                <td rowspan="2">Ciencias</td>
+                <td>Geografía</td>
+            </tr>
+            <tr>
+                <td>11:00 - 12:00</td>
+                <td>Recreo</td>
+                <td>Matemáticas</td>
+                <td>Historia</td>
+            </tr>
+            <tr>
+                <td colspan="6">Fin del Horario</td>
+            </tr>
+        </table>
+    </main>
+    
+    <footer>
+        <p>&copy;  Mi Página Web. Todos los derechos reservados. JuanGzu</p>
+    </footer>
+</body>
+</html>
