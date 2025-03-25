@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Estudiantes>
+  <Estudiante>
+    <NumeroControl>A2418611</NumeroControl>
+    <Nombre>Carlota Josefina Gollum</Nombre>
+    <CURP>06196357252</CURP>
+    <Sexo>M</Sexo>
+    <Semestre>9</Semestre>
+    <Carrera>Ingeniería Industrial</Carrera>
+    <Fotografia>https://example.com/fotos/A2418611.jpg</Fotografia>
+  </Estudiante>
+  <Estudiante>
+    <NumeroControl>A2545485</NumeroControl>
+    <Nombre>Catalina Esther Venegas Peña</Nombre>
+    <CURP>06750598960</CURP>
+    <Sexo>M</Sexo>
+    <Semestre>9</Semestre>
+    <Carrera>Ingeniería Civil</Carrera>
+    <Fotografia>https://example.com/fotos/A2545485.jpg</Fotografia>
+  </Estudiante>
+  <!-- Resto de registros -->
+</Estudiantes>
