@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FarmaciaSimi</title>
+    <style>
+        /* Estilos Generales */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* Navbar */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #174c98;
+            padding: 15px 30px;
+            color: white;
+            width: 100%;
+        }
+
+        .logo img {
+            width: 80px;
+            height: auto;
+        }
+
+        .menu {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            gap: 20px;
+        }
+
+        .menu li {
+            position: relative;
+        }
+
+        .menu a {
+            text-decoration: none;
+            color: white;
+            padding: 8px 12px;
+            display: block;
+            transition: background-color 0.3s ease;
+        }
+
+        .menu a:hover {
+            background-color: #539aff;
+            border-radius: 4px;
+        }
+
+        .submenu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 4px;
+            z-index: 1000;
+        }
+
+        .submenu li {
+            width: 200px;
+        }
+
+        .submenu a {
+            color: #174c98;
+            padding: 10px;
+            transition: background-color 0.3s ease;
+        }
+
+        .submenu a:hover {
+            background-color: #f0f0f0;
+        }
+
+        .dropdown:hover .submenu {
+            display: block;
+        }
+
+        /* Contenedor Principal */
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            width: 80%;
+            margin-top: 20px;
+        }
+
+        .box {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Estilos del Formulario */
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        form label {
+            font-weight: bold;
+        }
+
+        form input, form textarea {
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+
+        form button {
+            padding: 10px;
+            background-color: #174c98;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+
+        form button:hover {
+            background-color: #539aff;
+        }
+
+        /* Estilos de la Tabla */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+
+        table, th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #174c98;
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        tr:hover {
+            background-color: #f1f1f1;
+        }
+
+        /* Responsividad */
+        @media (max-width: 768px) {
+            .navbar {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .menu {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .container {
+                grid-template-columns: 1fr;
+                width: 90%;
+            }
+
+            .box {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo"><img src="SimiLogo.png" alt="FarmaciaSimi"></div>
+        <ul class="menu">
+            <li><a href="#">Inicio</a></li>
+            <li class="dropdown">
+                <a href="#">Productos &#9660;</a>
+                <ul class="submenu">
+                    <li><a href="#">Medicamentos</a></li>
+                    <li><a href="#">Cosméticos</a></li>
+                    <li><a href="#">Higiene Personal</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="#">Sucursales &#9660;</a>
+                <ul class="submenu">
+                    <li><a href="#">Sucursal Centro</a></li>
+                    <li><a href="#">Sucursal Norte</a></li>
+                    <li><a href="#">Sucursal Sur</a></li>
+                    <li><a href="#">Sucursal Este</a></li>
+                    <li><a href="#">Sucursal Oeste</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="box">
+            <h2>Formulario de Contacto</h2>
+            <form>
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" required><br>
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required><br>
+                <label for="message">Mensaje:</label>
+                <textarea id="message" name="message" required></textarea><br>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+
+        <div class="box">
+            <h2>Horarios de Atención</h2>
+            <table>
+                <tr>
+                    <th rowspan="2">Día</th>
+                    <th colspan="2">Horario</th>
+                </tr>
+                <tr>
+                    <th>Mañana</th>
+                    <th>Tarde</th>
+                </tr>
+                <tr>
+                    <td>Lunes - Viernes</td>
+                    <td>08:00 - 12:00</td>
+                    <td>14:00 - 18:00</td>
+                </tr>
+                <tr>
+                    <td>Sábado</td>
+                    <td>09:00 - 13:00</td>
+                    <td>Cerrado</td>
+                </tr>
+                <tr>
+                    <td>Domingo</td>
+                    <td colspan="2">Cerrado</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
