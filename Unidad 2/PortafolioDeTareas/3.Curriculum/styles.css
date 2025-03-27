@@ -27,7 +27,7 @@ body {
 }
 
 .logo img {
-  width: 80px; /* Logo aumentado */
+  width: 80px;
   height: auto;
 }
 
@@ -81,7 +81,7 @@ body {
 }
 
 .hero-image {
-  flex: 1.5 1 300px; /* La imagen ocupa mayor espacio */
+  flex: 1.5 1 500px; 
   display: flex;
   justify-content: center;
   padding: 20px;
@@ -89,8 +89,8 @@ body {
 
 .hero-image img {
   max-width: 100%;
-  height: auto;
-  border-radius: 10px;
+  height: 350px;
+  border-radius: 50%;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
@@ -104,6 +104,7 @@ body {
   font-weight: bold;
   display: inline-block;
   transition: background-color 0.3s, transform 0.3s;
+  margin-top: 20px;
 }
 
 .btn-primary:hover {
@@ -176,6 +177,18 @@ body {
   font-size: 1.3rem;
   margin-bottom: 5px;
 }
+
+.item-box  a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: normal;
+  transition: color 0.3s;
+}
+
+.item-box a:hover {
+  color: #40D374;
+}
+
 
 /* Contacto */
 .contact-section {
