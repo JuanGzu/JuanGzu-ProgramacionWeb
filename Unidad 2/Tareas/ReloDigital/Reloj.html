@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Reloj.css">
+    <title>Reloj</title>
+</head>
+<body>
+    <h1 id="reloj">Reloj Digital</h1>
+    <script>
+        function actualizarReloj() {
+            const fecha = new Date();
+            const horas = String(fecha.getHours()).padStart(2, '0');
+            const minutos = String(fecha.getMinutes()).padStart(2, '0');
+            const segundos = String(fecha.getSeconds()).padStart(2, '0');
+            document.getElementById('reloj').textContent = `${horas}:${minutos}:${segundos}`;
+        }
+
+        setInterval(actualizarReloj, 1000);
+        actualizarReloj(); // Llamar una vez para mostrar el reloj inmediatamente
+    </script>
+</body>
+</html>
+
