@@ -1,0 +1,33 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Pokedex</h1>
+    <label for="pokemon">Nombre o ID del Pokémon:</label>
+    <input type="text" id="pokemon" placeholder="pikachu">
+    <button onclick="fetchPokemon()">Buscar Pokémon</button>
+    <button onclick="fetchRandomPokemon()">Generar Pokémon Aleatorio</button>
+    <button onclick="fetchRandomTeam()">Generar Equipo Aleatorio</button>
+    
+    <div id="pokedex">
+        <img id="pokemon-image" src="" alt="Imagen del Pokémon">
+        <div id="pokemon-details">
+            <h2 id="pokemon-name"></h2>
+            <p><strong>ID:</strong> <span id="pokemon-id"></span></p>
+            <p><strong>Tipo:</strong> <span id="pokemon-type"></span></p>
+            <p><strong>Habilidades:</strong> <span id="pokemon-abilities"></span></p>
+        </div>
+    </div>
+    
+    <h2>Equipo Pokémon</h2>
+    <div id="pokemon-team"></div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

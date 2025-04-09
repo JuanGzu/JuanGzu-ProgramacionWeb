@@ -1,0 +1,63 @@
+body { 
+    font-family: Arial, sans-serif; 
+    text-align: center; 
+    background: url('./img/fondo.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: white; 
+}
+
+h1 { 
+    font-size: 2em; 
+}
+
+input, button { 
+    padding: 10px; 
+    margin: 10px; 
+}
+
+#pokedex { 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    background: #fff; 
+    color: black; 
+    padding: 20px; 
+    border-radius: 10px; 
+    width: 60%; 
+    margin: auto; 
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.3); 
+}
+
+#pokemon-image { 
+    width: 200px; 
+    height: 200px; 
+    object-fit: contain; 
+    margin-right: 20px; 
+}
+
+#pokemon-details { 
+    text-align: left; 
+}
+
+#pokemon-team { 
+    display: flex; 
+    justify-content: center; 
+    flex-wrap: wrap; 
+    margin-top: 20px; 
+}
+
+.pokemon-card {
+    background: white; 
+    color: black; 
+    margin: 10px; 
+    padding: 10px; 
+    border-radius: 10px; 
+    width: 150px; 
+    text-align: center; 
+    box-shadow: 3px 3px 10px rgba(0,0,0,0.3); 
+}
+
+.pokemon-card img { 
+    width: 100px; 
+    height: 100px; 
+}
