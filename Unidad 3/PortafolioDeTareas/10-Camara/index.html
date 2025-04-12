@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grabador de Cámara</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>📷 Grabación con Cámara Web 🎬</h1>
+    
+    <video id="video" autoplay muted></video>
+    
+    <div class="controls">
+      <button id="btnCamara">🎥 Activar Cámara</button>
+      <button id="btnGrabar" disabled>🎬 Iniciar Grabación</button>
+    </div>
+
+    <video id="grabacion" controls></video>
+    <a id="descargar" style="display:none;" class="btn-descarga">⬇️ Descargar Video</a>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

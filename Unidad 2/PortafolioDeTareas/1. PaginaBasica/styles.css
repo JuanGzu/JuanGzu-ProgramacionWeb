@@ -1,85 +1,59 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: white;
+   margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 header {
-    background: #333;
-    color: white;
-    text-align: center;
+    width: 100%;
     padding: 20px;
-}
-
-nav {
-    background: #444;
-    padding: 10px;
     text-align: center;
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 15px;
-}
-
-nav ul li a {
+    background-color: #5a67d8;
     color: white;
-    text-decoration: none;
+    font-size: 24px;
+    
 }
 
 main {
-    padding: 20px;
-    text-align: center;
+    display: flex;
+    flex: 1;
+    width: 95%;
+    margin: 20px auto;
 }
 
-.servicios ul {
-    list-style: none;
-    padding: 0;
-}
-
-.galeria .imagenes img {
-    width: 150px;
-    margin: 10px;
-    border-radius: 8px;
-}
-
-.contacto form {
+.left-column {
+    flex: 3;
     display: flex;
     flex-direction: column;
-    max-width: 400px;
-    margin: auto;
+    gap: 10px;
+    padding: 20px;
+    background-color: #40e0d0;
 }
 
-.contacto label {
-    margin-top: 10px;
+.box {
+    padding: 20px;
+    background-color: #fcd34d;
+    height: 200px;
 }
 
-.contacto input, .contacto textarea {
-    padding: 8px;
-    width: 100%;
-}
-
-button {
-    margin-top: 10px;
-    background: #333;
+aside {
+    flex: 1;
+    background-color: #f472b6;
+    margin-left: 20px;
+    padding: 20px;
     color: white;
-    padding: 10px;
-    border: none;
-    cursor: pointer;
 }
 
 footer {
-    background: #333;
-    color: white;
-    text-align: center;
-    padding: 10px;
-    position: relative;
-    bottom: 0;
     width: 100%;
+    text-align: center;
+    padding: 15px;
+    background-color: #5a67d8;
+    color: white;
+    margin-top: auto;;
 }
